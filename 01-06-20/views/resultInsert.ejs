@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link href="/assets/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <%if (data != null) { %>  
+        <h1>El siguiente es el registro nuevo</h1>
+        <p> <%="ID = " + data.id %> </p>
+        <p> <%= "userName = " + data.userName %> </p>
+        <p> <%="Password = " +  data.password %> </p>
+    <%}else{%>
+        <h1><%= "No se pudo insertar el nuevo registro" %></h1>
+    <%};%>
+    <button id="btnInsert" class="inpBtn" onclick="location.href='http://localhost:3000/insert'">Insertar</button> 
+    <button class="btn" onclick="location.href='http://localhost:3000/'"><i class="fa fa-home"></i> Home</button>
+</body>
+
+</html>

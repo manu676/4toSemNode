@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link href="/assets/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <%if (data.length <= 0) { %>  
+        <br>
+        <h1> <%= "No hay datos" %> </h1>
+    <%}else{ data.forEach(function(user) { %>
+        <table>
+            <tr> 
+                <th>ID</th>        
+                <th>UserName</th>
+                <th>Password</th>
+                <th>Buttons</th>
+            </tr>
+            <br> 
+                <tr>
+                <td><%= user.id %></td>
+                <td><%= user.userName %></td>
+                <td><%= user.password %> </td>  
+                <td>
+                    <input id="deleteBtn" class="inpBtn" type="button" value="Delete"
+                    onclick="location.href='http://localhost:3000/delete/<%=user.id%>'" 
+                    />
+                    <input id="editBtn" type="button" class="inpBtn" onclick="location.href='http://localhost:3000/edit/<%=user.id%>'"
+                    value="Edit"/>
+                </td>
+            </tr>
+        </table>
+    <% })};%>
+    <br>
+    <button class="btnSend" onclick="location.href='http://localhost:3000/search'">Buscar de nuevo</button> 
+    <button class="btn" onclick="location.href='http://localhost:3000/'"><i class="fa fa-home"></i> Home</button>
+
+</body>
+
+</html>

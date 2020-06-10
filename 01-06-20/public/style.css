@@ -1,0 +1,115 @@
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+#btnSearch{
+    margin: 25%;
+    border-radius: .25rem;
+    border-color: rgba(24, 22, 22, 0.603);
+    background-color: #f1f1f1;
+    width: 25%;
+}
+#btnInsert{
+    border-radius: .25rem;
+    background-color: #f1f1f1;
+    border-color: rgba(24, 22, 22, 0.603);
+    width: 25%;
+}
+#btnInsert:hover, #btnSearch:hover{
+    animation: snake 7;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+.btn {
+    margin-left: 20px;
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: .25rem;
+}
+.btnSend {
+    margin-left: 45%;
+    background-color: rgb(36, 37, 37);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: .25rem;
+}
+.btn:hover{
+    background-color: rgba(12, 62, 112, 0.767);
+}
+.btnSend:hover{
+    background-color: rgba(29, 27, 27, 0.664);
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;  
+    text-align: center;
+    background-color: #da105e79;
+    border-color:  #8f0238bd;   
+} 
+td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.inpEdit{
+    width: 50%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+.inpBtn{
+    width: 49%;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#deletebtn{
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+#editbtn{
+    color: #fff;
+    background-color: rgb(45, 212, 96);
+    border-color: rgb(45, 212, 96);
+}
+#deletebtn:hover{
+    background-color: #e2172b73;
+    border-color: #e2172b59;
+}
+#editbtn:hover{
+    background-color: #10c4465b;
+    border-color: #0e9e397a;
+}

@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Tabla</title>
+    <link href="/assets/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <table>
+    <tr> 
+        <th>ID</th>        
+        <th>UserName</th>
+        <th>Password</th>
+        <th>Buttons</th>
+    </tr>
+    <br>
+    <% data.forEach(function(user) { %>    
+        <tr>
+        <td><%= user.id %></td>
+        <td><%= user.userName %></td>
+        <td><%= user.password %> </td>  
+        <td>
+            <input id="deleteBtn" class="inpBtn" type="button" value="Delete"
+            onclick="location.href='http://localhost:3000/delete/<%=user.id%>'" 
+            />
+            <input id="editBtn" type="button" class="inpBtn" onclick="location.href='http://localhost:3000/edit/<%=user.id%>'"
+            value="Edit"/>
+        </td>
+    </tr>
+    <% }); %> 
+    </table>
+    <br>
+    <button id="btnSearch" class="inpBtn" onclick="location.href='http://localhost:3000/search'">Buscar</button> 
+    <button id="btnInsert" class="inpBtn" onclick="location.href='http://localhost:3000/insert'">Insertar</button> 
+</body>
+    <script src="../inicio.js"></script>
+</html>
